@@ -1,3 +1,7 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -18,5 +22,25 @@ nav ul li a {
 }
 
 .about-section {
-    height: 1960px;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.img-about img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.img-about {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        max-width: 768px;
+    }
+
+    
 }
