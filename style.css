@@ -8,6 +8,23 @@ header {
     align-items: center;
 }
 
+.background-image {
+    position: absolute;
+    width: 1440px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.about {
+    position: relative;
+    z-index: 1;
+    width: 330px;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -22,7 +39,14 @@ nav ul li a {
 }
 
 .about-section {
-    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1440px;
+    position: relative;
+    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -31,6 +55,7 @@ nav ul li a {
     height: auto;
     display: block;
     object-fit: cover;
+    padding-top: 20px;
 }
 
 .img-about {
