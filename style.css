@@ -67,5 +67,17 @@ nav ul li a {
         max-width: 768px;
     }
 
+    .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 768px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
     
 }
