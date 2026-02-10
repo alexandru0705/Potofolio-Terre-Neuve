@@ -67,6 +67,11 @@ nav ul li a {
         max-width: 768px;
     }
 
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .about-section {
     display: flex;
     flex-direction: column;
@@ -77,6 +82,17 @@ nav ul li a {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+}
+
+.background-image {
+    position: absolute;
+    width: 768px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    object-fit: cover;
 }
 
     
