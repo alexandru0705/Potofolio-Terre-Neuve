@@ -69,7 +69,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .about-section {
-        max-width: 768px;
+        max-width: 100%;
     }
 
     header {
@@ -81,38 +81,42 @@ nav ul li a:hover {
     }
 
     .about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    max-width: 768px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
 
-.background-image {
-    position: absolute;
-    width: 768px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    z-index: -1;
-    object-fit: cover;
-}
+    .background-image {
+        position: absolute;
+        width: 768px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: -1;
+        object-fit: cover;
+    }
 
-header h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    header h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-nav ul {
-    padding: 0;
+    nav ul {
+        padding: 0;
 
-}
+    }
 
-    
+    .about {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
 }
