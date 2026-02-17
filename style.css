@@ -11,12 +11,18 @@ header {
 
 .background-image {
     position: absolute;
-    width: 1440px;
+    width: 100%;
+    /* Changed from 1440px to be responsive */
     height: 100%;
     top: 0;
-    opacity: 0.3;
+    left: 0;
+    /* Added to ensure alignment */
+    opacity: 0.4;
+    /* Adjust this to your liking */
     z-index: -1;
     object-fit: cover;
+    pointer-events: none;
+    /* Prevents the image from interfering with clicks */
 }
 
 .about {
@@ -70,6 +76,9 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .about-section {
         max-width: 100%;
+        background-image: url(images/bckgr.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     header {
@@ -93,13 +102,18 @@ nav ul li a:hover {
 
     .background-image {
         position: absolute;
-        width: 768px;
+        width: 100%;
+        /* Changed from 1440px to be responsive */
         height: 100%;
         top: 0;
         left: 0;
-        opacity: 0.3;
+        /* Added to ensure alignment */
+        opacity: 0.1 !important;
+        /* Adjust this to your liking */
         z-index: -1;
         object-fit: cover;
+        pointer-events: none;
+        /* Prevents the image from interfering with clicks */
     }
 
     header h1 {
